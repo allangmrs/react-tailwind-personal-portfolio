@@ -78,14 +78,16 @@ export const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
+              <Button
+                size="lg"
+                onClick={() =>
+                  document.getElementById("contact")?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
             </div>
 
             {/* Social Links */}
@@ -114,12 +116,20 @@ export const Hero = () => {
             <div className="relative max-w-md mx-auto">
               <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
               <div className="relative glass rounded-3xl p-2 glow-border">
-                <img
+                {/* <img
                   src=""
                   alt="Allan Guimarães"
                   className="w-full aspect-4/5 object cover rounded-2xl"
-                />
+                /> */}
+                <div className="w-full aspect-4/5 rounded-2xl bg-linear-to-br from-surface via-background to-primary/10 flex flex-col items-center justify-center">
+                  <div className="text-8xl font-bold tracking-tight text-primary glow-text">
+                    AG<span className="text-white">.</span>
+                  </div>
 
+                  <p className="mt-4 text-sm text-muted-foreground tracking-widest uppercase">
+                    Student Developer
+                  </p>
+                </div>
                 {/* Floating Badge */}
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="flex items-center gap-3">

@@ -4,6 +4,24 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
   {
+    title: "Course Recommendation System",
+    description:
+      "An academic course recommendation system that uses graph algorithms to analyze curriculum dependencies, scheduling conflicts, and course priorities. Developed in Python as part of a university project.",
+    image: "/projects/course-recommendation.png",
+    tags: ["Python", "Graph Algorithms", "Data Structures"],
+    link: "",
+    github: "",
+  },
+  {
+    title: "Sell-a-Spell",
+    description:
+      "A Unity roguelike developed for SoloDev 2026, featuring modular combat, dialogue, quest, and scene transition systems. Built with a focus on reusable components and software architecture.",
+    image: "/projects/sell-a-spell.png",
+    tags: ["Unity", "C#", "Software Architecture", "Game Development"],
+    link: "",
+    github: "",
+  },
+  {
     title: "Agent Disco",
     description:
       "A game jam project built with Unity and C#, featuring challenging obstacles and polished gameplay. Ranked #28 in Enjoyment and #84 Overall at Brackeys Game Jam 2025.2.",
@@ -13,31 +31,13 @@ const projects = [
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Eddie's Bizarre Adventure",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "AI Writing Assistant",
-    description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "Project Management Tool",
-    description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
+      "A challenging 2D platformer created for Brackeys Game Jam 2026.2, featuring deceptive obstacles, a fairy companion, and custom dialogue, camera, and scene transition systems.",
+    image: "/projects/brackeys-2026.png",
+    tags: ["Unity", "C#", "Game Development", "DOTween"],
+    link: "",
+    github: "",
   },
 ];
 
@@ -126,9 +126,13 @@ export const Projects = () => {
 
         {/* View All CTA*/}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            View All Projects
-            <ArrowUpRight className="w-5 h-5" />
+          <AnimatedBorderButton
+            href="https://github.com/allangmrs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="w-5 h-5" />
+            View GitHub
           </AnimatedBorderButton>
         </div>
       </div>
