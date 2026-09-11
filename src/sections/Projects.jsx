@@ -7,37 +7,38 @@ const projects = [
     title: "Course Recommendation System",
     description:
       "An academic course recommendation system that uses graph algorithms to analyze curriculum dependencies, scheduling conflicts, and course priorities. Developed in Python as part of a university project.",
-    image: "/projects/course-recommendation.png",
+    image: "course-recommendation.png",
     tags: ["Python", "Graph Algorithms", "Data Structures"],
-    link: "",
-    github: "",
-  },
-  {
-    title: "Sell-a-Spell",
-    description:
-      "A Unity roguelike developed for SoloDev 2026, featuring modular combat, dialogue, quest, and scene transition systems. Built with a focus on reusable components and software architecture.",
-    image: "/projects/sell-a-spell.png",
-    tags: ["Unity", "C#", "Software Architecture", "Game Development"],
-    link: "",
-    github: "",
+    link: "https://github.com/JoaoPedroGarciaTorezan/Sistema-de-Recomendacao-de-Matriculas",
+    github:
+      "https://github.com/JoaoPedroGarciaTorezan/Sistema-de-Recomendacao-de-Matriculas",
   },
   {
     title: "Agent Disco",
     description:
       "A game jam project built with Unity and C#, featuring challenging obstacles and polished gameplay. Ranked #28 in Enjoyment and #84 Overall at Brackeys Game Jam 2025.2.",
-    image: "",
+    image: "agent-disco.png",
     tags: ["Unity", "C#", "Game Development"],
-    link: "#",
-    github: "#",
+    link: "https://mateus475.itch.io/agentdisco",
+    github: "https://github.com/ViniciusVsV/DevU-BrackeysJam",
+  },
+  {
+    title: "Sell-a-Spell",
+    description:
+      "A Unity roguelike developed for SoloDev 2026, featuring modular combat, dialogue, quest, and turn systems. Built with a focus on reusable components and software architecture.",
+    image: "sell-a-spell.png",
+    tags: ["Unity", "C#", "Software Architecture", "Game Development"],
+    link: "https://monkeypants32.itch.io/sell-a-spell",
+    github: "https://github.com/allangmrs/Sell-a-Spell",
   },
   {
     title: "Eddie's Bizarre Adventure",
     description:
       "A challenging 2D platformer created for Brackeys Game Jam 2026.2, featuring deceptive obstacles, a fairy companion, and custom dialogue, camera, and scene transition systems.",
-    image: "/projects/brackeys-2026.png",
+    image: "brackeys-2026.png",
     tags: ["Unity", "C#", "Game Development", "DOTween"],
-    link: "",
-    github: "",
+    link: "https://monkeypants32.itch.io/eddies-bizarre-adventure",
+    github: "https://github.com/allangmrs/Brackeys-2026-2",
   },
 ];
 
@@ -104,7 +105,6 @@ export const Projects = () => {
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-l group-hover:-translate-y-1 transition-all" />
                 </div>
                 <p className="text-muted-foreground text-sm">
                   {project.description}
